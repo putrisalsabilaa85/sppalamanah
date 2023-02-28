@@ -2,7 +2,7 @@
   <!-- Brand Logo -->
   <a href="" class="brand-link">
     <img src="{{ asset('templates/backend/AdminLTE-3.1.0') }}/dist/img/smk.amanah.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-    <span class="brand-text font-weight-light">SPP SMK AL- AMANAH</span>
+    <span class="brand-text font-weight-light">SMK AL- AMANAH</span>
   </a>
 
   <!-- Sidebar -->
@@ -67,7 +67,7 @@
           <a href="{{ route('siswa.index') }}" class="nav-link {{ Request::segment(2) == 'siswa' ? 'active' : '' }}">
             <i class="nav-icon fas fa-users"></i>
             <p>
-              Siswa
+              Data Siswa
             </p>
           </a>
         </li>
@@ -83,7 +83,7 @@
           <a href="{{ route('kelas.index') }}" class="nav-link {{ Request::segment(2) == 'kelas' ? 'active' : '' }}">
             <i class="nav-icon fas fa-school"></i>
             <p>
-              Kelas
+              Data Kelas
             </p>
           </a>
         </li>
@@ -107,7 +107,7 @@
           <a href="{{ route('petugas.index') }}" class="nav-link {{ Request::segment(2) == 'petugas' ? 'active' : '' }}">
             <i class="nav-icon fas fa-user"></i>
             <p>
-              Petugas
+              Data Petugas
             </p>
           </a>
         </li>
@@ -115,14 +115,14 @@
           <a href="{{ route('spp.index') }}" class="nav-link {{ Request::segment(2) == 'spp' ? 'active' : '' }}">
             <i class="nav-icon fas fa-money-bill"></i>
             <p>
-              SPP
+              Data SPP
             </p>
           </a>
         </li>
         @endrole
 
         @role('petugas')
-        <li class="nav-header">MANAJEMEN DATA</li>
+        <li class="nav-header">PEMBAYARAN</li>
         {{-- <li class="nav-item">
           <a href="{{ route('siswa.index') }}" class="nav-link {{ Request::segment(2) == 'siswa' ? 'active' : '' }}">
             <i class="nav-icon fas fa-users"></i>
@@ -202,7 +202,7 @@
         @endrole
 
         @role('siswa')
-        <li class="nav-header">PEMBAYARAN</li>
+        <li class="nav-header">MANAJEMEN DATA</li>
          <li class="nav-item">
           <a href="{{ route('siswa.pembayaran-spp') }}" class="nav-link {{ Request::segment(2) == 'pembayaran-spp' ? 'active' : '' }}">
             <i class="nav-icon fas fa-money-bill"></i>
@@ -219,14 +219,14 @@
             </p>
           </a>
          </li>
-        <li class="nav-item">
+        {{-- <li class="nav-item">
           <a href="{{ route('siswa.laporan-pembayaran') }}" class="nav-link {{ Request::is('siswa/laporan-pembayaran') ? 'active' : '' }}">
             <i class="nav-icon fas fa-file"></i>
             <p>
               Laporan
             </p>
           </a>
-        </li>
+        </li> --}}
         @endrole
 
         @role('admin')

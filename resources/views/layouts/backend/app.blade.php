@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>SPP | SMK AL - AMANAH @yield('title')</title>
+  <title>SPP | SMK AL - AMANAH</title>
 
   <!-- Title Web -->
   <link rel="icon" href="{{ asset('templates/backend/AdminLTE-3.1.0') }}/dist/img/logo.png" sizes="18x18">

@@ -1,4 +1,4 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-blue navbar-light">
   <!-- Left navbar links -->
   <ul class="navbar-nav">
     <li class="nav-item">
@@ -13,9 +13,9 @@
         <i class="far fa-user"></i>
       </a>
       <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-        <a href="{{ route('profile.index') }}" class="dropdown-item">
+        {{-- <a href="{{ route('profile.index') }}" class="dropdown-item">
           <i class="fas fa-fw fa-user mr-2"></i> Profile
-        </a>
+        </a> --}}
         <div class="dropdown-divider"></div>
         <a href="javascript:void(0)" class="dropdown-item" data-toggle="modal" data-target="#modal-default">
           <i class="fas fa-fw fa-sign-out-alt mr-2"></i> Logout
